@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extra_title %} - Our Offer{% endblock %}
+
+{% block content %}
+<!-- Main container -->
+<div class="top-margin">
+    <!-- Include jumbotron -->
+    {% include 'offer/jumbotron.html' %}
+    <!-- Include white block-->
+    {% include 'includes/blocks/white-block.html'%}
+    <!-- Include offer block -->
+    {% include 'offer/offer.html'%}
+</div>
+{% endblock %}

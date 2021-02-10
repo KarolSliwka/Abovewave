@@ -1,0 +1,37 @@
+/* ------------------------------ Jumbotron */
+
+.jumbotron {
+    background-color: $light-grey;
+}
+
+/* ------------------------------ Top Container */
+
+.top-container {
+    top: -25px;
+    position: relative;
+    background-color: $white;
+    border-radius: 2rem;
+}
+
+/* ------------------------------ Author */
+
+.author-block {
+    border-radius: 2rem;
+    img {
+        height: 100%;
+        width: 100%;
+        border: 2px solid rgba($shark, 0.2);
+        border-radius: 1.5rem;
+        object-fit: cover;
+        object-position: top;
+    }
+    .author-name {
+        font-size: 2rem;
+        font-weight: 400;
+        border-bottom: 1px solid #c2c2c3;
+        padding-bottom: 1rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+}

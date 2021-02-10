@@ -1,0 +1,222 @@
+[
+    {
+        "pk": 1,
+        "model": "offer.offer",
+        "fields": {
+            "category": 1,
+            "image": "",
+            "name": "Static Website - Basic",
+            "description": "Contains a maximum of 3 Web pages of your choice. No administration, contact form not included"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "offer.offer",
+        "fields": {
+            "category": 1,
+            "image": "",
+            "name": "Static Website - High Five",
+            "description": "Contains a maximum of 5 Web pages of your choice. No administration, contact form not included"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "offer.offer",
+        "fields": {
+            "category": 1,
+            "image": "",
+            "name": "Static Website - Advanced",
+            "description": "Contains more than 5 Web pages of your choice. No administration, contact form not included"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "offer.offer",
+        "fields": {
+            "category": 1,
+            "image": "",
+            "name": "Static Landing Page",
+            "description": "Contains 1 Web page with sections and links of your choice. No administration, contact form not included"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "offer.offer",
+        "fields": {
+            "category": 1,
+            "image": "",
+            "name": "Dynamic Website - Basic",
+            "description": "Contains a maximum of 3 Web pages of your choice. Full administration with CRUD functionality and Email service provided."
+        }
+    },
+    {
+        "pk": 6,
+        "model": "offer.offer",
+        "fields": {
+            "category": 1,
+            "image": "",
+            "name": "Dynamic Website - High Five",
+            "description": "Contains a maximum of 5 Web pages of your choice. Full administration with CRUD functionality and Email service provided."
+        }
+    },
+    {
+        "pk": 7,
+        "model": "offer.offer",
+        "fields": {
+            "category": 1,
+            "image": "",
+            "name": "Dynamic Website - Advanced",
+            "description": "Contains more than 5 Web pages of your choice. Full administration with CRUD functionality and Email service provided."
+        }
+    },
+    {
+        "pk": 8,
+        "model": "offer.offer",
+        "fields": {
+            "category": 1,
+            "image": "",
+            "name": "Dynamic Landing Page",
+            "description": "Contains 1 Web page with sections and links of your choice. Full administration with CRUD functionality and Email service provided."
+        }
+    },
+    {
+        "pk": 9,
+        "model": "offer.offer",
+        "fields": {
+            "category": 1,
+            "image": "",
+            "name": "Website Redesign",
+            "description": "Contains redesign of your website. We will check what you need after getting in touch with us. We will provide you necessary feedback before we will start designing."
+        }
+    },
+    {
+        "pk": 10,
+        "model": "offer.offer",
+        "fields": {
+            "category": 2,
+            "image": "",
+            "name": "Shopify Basic",
+            "description": "We will help you create your Shopify account. We will take care of your domain redirections to the Shopify platform, create all necessary emails that you need. We will import the template of your choice and we will create basic store navigation."
+        }
+    },
+    {
+        "pk": 12,
+        "model": "offer.offer",
+        "fields": {
+            "category": 2,
+            "image": "",
+            "name": "Shopify Advanced",
+            "description": "Contains everything from the 'Shopify Basic' pack. Plus you will receive help with your first steps, adding products, creating testing orders, importing a subscriber list, if exist, importing/transferring products from the previous platform, and many more."
+        }
+    },
+    {
+        "pk": 13,
+        "model": "offer.offer",
+        "fields": {
+            "category": 2,
+            "image": "",
+            "name": "Shopify Store Subscriber",
+            "description": "Contains 'Shopify Advanced' pack. You will also have 3 months of support with managing your new store, products, and many more."
+        }
+    },
+    {
+        "pk": 14,
+        "model": "offer.offer",
+        "fields": {
+            "category": 2,
+            "image": "",
+            "name": "Shopify Design",
+            "description": "We will design your online store based on your needs."
+        }
+    },
+    {
+        "pk": 15,
+        "model": "offer.offer",
+        "fields": {
+            "category": 2,
+            "image": "",
+            "name": "Shopify Redesign",
+            "description": "We will measure and analyze the hottest links. We will check how users navigate across the whole store. We will provide you feedback from our analysis and tests. Together we will decide how you would like us to redesign your existing online store. New Store Design will match your customer's expectations."
+        }
+    },
+    {
+        "pk": 16,
+        "model": "offer.offer",
+        "fields": {
+            "category": 2,
+            "image": "",
+            "name": "Products Transfer to Shopify",
+            "description": "We will transfer your products from any platform to shopify."
+        }
+    },
+    {
+        "pk": 17,
+        "model": "offer.offer",
+        "fields": {
+            "category": 2,
+            "image": "",
+            "name": "Macro Photography (Packshots)",
+            "description": "We will take photos of your products for the online store. When everything is ready, we will prepare files for you with the correct product name and format. Photos will be cataloged according to your guidelines."
+        }
+    },
+    {
+        "pk": 18,
+        "model": "offer.offer",
+        "fields": {
+            "category": 2,
+            "image": "",
+            "name": "Photography Retouch",
+            "description": "Old, destroyed pictures laying around or maybe you would like to 'jazz-up' your existing store photos. Let us know and together we can find a solution for you."
+        }
+    },
+    {
+        "pk": 19,
+        "model": "offer.offer",
+        "fields": {
+            "category": 3,
+            "image": "",
+            "name": "Business Cards",
+            "description": "Contains one side or two-sided business card design. With 5  possible changes before final project approval. Business card styles: Standard, Square, Round Corners and Folded."
+        }
+    },
+    {
+        "pk": 20,
+        "model": "offer.offer",
+        "fields": {
+            "category": 3,
+            "image": "",
+            "name": "Flyers & Leaflets",
+            "description": "Contains a single design. With 5  possible changes before final project approval. Flyers & Leaflets formats and styles: A7, A6, A5, A4, A3, DL, Square or Folded."
+        }
+    },
+    {
+        "pk": 21,
+        "model": "offer.offer",
+        "fields": {
+            "category": 3,
+            "image": "",
+            "name": "Pull Up Roller Banners",
+            "description": "Contains a single design. With 5  possible changes before final project approval. You can choose any size from your private print company and we will prepare the project for the given dimensions."
+        }
+    },
+    {
+        "pk": 22,
+        "model": "offer.offer",
+        "fields": {
+            "category": 3,
+            "image": "",
+            "name": "Menus",
+            "description": "Contains a single design. With 5  possible changes before final project approval. You can choose a format of Menu and we will prepare the suitable project for the given dimensions."
+        }
+    },
+    {
+        "pk": 23,
+        "model": "offer.offer",
+        "fields": {
+            "category": 3,
+            "image": "",
+            "name": "Logo Design",
+            "description": "Contains a single design. With 5  possible changes before final project approval. We will create an outstanding logo that will represent your business on the whole globe."
+        }
+    }
+]

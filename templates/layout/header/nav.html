@@ -1,0 +1,33 @@
+<!-- Fixed navbar -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow">
+    <div class="container">
+        <a class="navbar-brand" href="{% url 'home' %}">
+            <img src="{{ MEDIA_URL }}logotype/abovewave.png" alt="abovewave-logo" height="27´" width="215" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">
+            </span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+            <ul class="navbar-nav ml-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                    <a class="nav-link text-uppercase {% if request.get_full_path == '/offer/' %}active{% endif %}"
+                        href="{% url 'offer' %}">Our Offer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-uppercase {% if request.get_full_path == '/projects/' %}active{% endif %}"
+                        href="{% url 'projects' %}">Our Work</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-uppercase {% if request.get_full_path == '/info/' %}active{% endif %}"
+                        href="{% url 'info' %}">About Us</a>
+                </li>
+                <li class="nav-item quote-button mt-1">
+                    <a class="nav-link text-uppercase {% if request.get_full_path == '/contact/' %}active{% endif %}"
+                        href="{% url 'contact' %}">Free Quote</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

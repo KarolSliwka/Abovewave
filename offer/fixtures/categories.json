@@ -1,0 +1,26 @@
+[
+    {
+        "pk": 1,
+        "model": "offer.offercategory",
+        "fields": {
+            "name": "web_development_design",
+            "friendly_name": "Web Design & Developement"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "offer.offercategory",
+        "fields": {
+            "name": "e_commerce",
+            "friendly_name": "E-Commerce"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "offer.offercategory",
+        "fields": {
+            "name": "design",
+            "friendly_name": "Design"
+        }
+    }
+]

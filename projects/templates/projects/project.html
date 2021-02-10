@@ -1,0 +1,33 @@
+<!-- Main container -->
+<div class="container p-2">
+    <div class="project-block bg-white p-4 mb-5 shadow-block">
+        <!-- For each project in Projects -->
+        {% for project in projects %}
+        <div class="row justify-content-between">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 images">
+                <div class="single-image">
+                    <img src="{{ project.image_main.url }}" alt="{{ project.name }}" class="image-main shadow">
+                </div>
+                <div class="single-image">
+                    <img src="{{ project.image_side.url }}" alt="{{ project.name }}" class="image-side shadow">
+                </div>
+                <div class="single-image">
+                    <img src="{{ project.image_bottom.url }}" alt="{{ project.name }}" class="image-bottom shadow">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 project-details">
+                <h2 class="title-medium text-uppercase">{{ project.name }}</h2>
+                <p class="p-medium project-cat">{{ project.category }}</p>
+                <p class="p-medium-b">{{ project.description }}</p>
+                <p class="live-web">
+                    <a href="{{ project.url }}" rel="noopener noreferrer" target="_blank">View Live Website</a>
+                </p>
+            </div>
+        </div>
+        <!-- Separating line -->
+        {% if forloop.last != True %}
+        <hr class="project-line">
+        {% endif %}
+        {% endfor %}
+    </div>
+</div>

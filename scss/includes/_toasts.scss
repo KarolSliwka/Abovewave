@@ -1,0 +1,43 @@
+/* Toasts */
+.messages-container {
+    position: fixed;
+    top: 80px;
+    right: 10px;
+    z-index: 99999999999;
+    max-width: 300px;
+
+    /* Main toast class */
+    .toast {
+        border-radius: 0.65rem;
+        border: 2px solid #fff;
+
+        .toast-header {
+            color: $white;
+            background: none;
+            border-bottom: none;
+            border-radius: inherit;
+        }
+
+        .tosat-body {
+            padding: e0.5rem 0.75rem;
+        }
+
+        .message-text {
+            color: $white;
+            font-weight: 300;
+        }
+    }
+
+    /* Toast - Success */
+    .toast-success {
+        background: linear-gradient(-90deg, $blue, $blue2);
+    }
+    /* Toast - Info */
+    .toast-info {
+        background: linear-gradient(90deg, $purple, $govenor);
+    }
+
+    .btn-close-white {
+        opacity: 0.85;
+    }
+}

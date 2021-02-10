@@ -1,0 +1,19 @@
+<!-- Main container -->
+<div class="container p-2">
+    <!-- Author block -->
+    <div class="author-block bg-white p-4 mb-5 shadow-block">
+        {% for author in authors %}
+        {% if author.image %}
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                <img src="{{ author.image.url }}" alt="{{ author.name }}">
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 p-4">
+                <h3 class="author-name">{{ author.name }}</h3>
+                <p class="p-medium pt-2">{{ author.about }}</p>
+            </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+    </div>
+</div>

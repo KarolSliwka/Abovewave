@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<style type="text/css">
+    body {
+        font-family: sans-serif;
+    }
+
+    h1 {
+        font-size: 1rem;
+        font-weight: 300;
+    }
+
+    h2,
+    h4 {
+        font-size: 1rem;
+        font-weight: 300;
+    }
+
+    span {
+        color: #00aebb;
+        text-decoration: none;
+    }
+
+    p {
+        font-size: 1rem;
+        color: #000;
+        margin-right: 1rem;
+    }
+
+    hr {
+        color: #ccc;
+    }
+</style>
+
+<body>
+    <h1>Message from: {{ name|title }}</h1>
+    <h2>Email: <span>{{ from_email }}</span></h2>
+    <hr>
+    <p>Offer: {{ offer }}</p>
+    <p>{{ message }}</p>
+    <hr>
+    <h4>Best Regards,<br>{{ name|title }}</h4>
+</body>
+
+</html>

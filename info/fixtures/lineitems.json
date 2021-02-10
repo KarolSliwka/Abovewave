@@ -1,0 +1,154 @@
+[
+    {
+        "pk": 1,
+        "model": "info.InfoLineItem",
+        "fields": {
+            "info": 1,
+            "description": "Every website we produce is one of a kind, as you are."
+        }
+    },
+    {
+        "pk": 2,
+        "model": "info.InfoLineItem",
+        "fields": {
+            "info": 1,
+            "description": "You don't have to worry about your website appearance across different devices. Responsiveness is our world!"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "info.InfoLineItem",
+        "fields": {
+            "info": 1,
+            "description": "We focus our attention on the user experience to create the best and intuitive navigation for your customers."
+        }
+    },
+    {
+        "pk": 4,
+        "model": "info.InfoLineItem",
+        "fields": {
+            "info": 1,
+            "description": "We always strive to be ahead of web design trends. That's why your website will never be behind current design styles."
+        }
+    },
+    {
+        "pk": 5,
+        "model": "info.InfoLineItem",
+        "fields": {
+            "info": 1,
+            "description": "Your website will have a consistent and clear appearance."
+        }
+    },
+    {
+        "pk": 6,
+        "model": "info.InfoLineItem",
+        "fields": {
+            "info": 2,
+            "description": "We have the knowledge and evidence(our work) that we create amazing websites for clients."
+        }
+    },
+    {
+        "pk": 7,
+        "model": "info.InfoLineItem",
+        "fields": {
+            "info": 2,
+            "description": "Trends? We create them! As we grow, we push the boundaries to create something unique and one of a kind."
+        }
+    },
+    {
+        "pk": 8,
+        "model": "info.InfoLineItem",
+        "fields": {
+            "info": 2,
+            "description": "Thanks to our extensive knowledge of coding languages, we guarantee a variety of designs and styles."
+        }
+    },
+    {
+        "pk": 9,
+        "model": "info.InfoLineItem",
+        "fields": {
+            "info": 2,
+            "description": "Too many administration duties? We can provide a variety of solutions to help you minimize them."
+        }
+    },
+    {
+        "pk": 10,
+        "model": "info.InfoLineItem",
+        "fields": {
+            "info": 2,
+            "description": "Our developers and designers work closely together. They will deliver the best user experience, a design that will suit your needs."
+        }
+    },
+    {
+        "pk": 11,
+        "model": "info.InfoLineItem",
+        "fields": {
+            "info": 3,
+            "description": "We can integrate Stripe Payments into your website so that your customers are always paying securely & safely."
+        }
+    },
+    {
+        "pk": 12,
+        "model": "info.InfoLineItem",
+        "fields": {
+            "info": 3,
+            "description": "We are experienced and knowledgeable about Shopify. If you’re looking for a manageable platform, this is it!"
+        }
+    },
+    {
+        "pk": 13,
+        "model": "info.InfoLineItem",
+        "fields": {
+            "info": 3,
+            "description": "Got an existing shop? We can migrate your products over to the Shopify platform."
+        }
+    },
+    {
+        "pk": 14,
+        "model": "info.InfoLineItem",
+        "fields": {
+            "info": 3,
+            "description": "Whether you want a 'sale' option or the ability for customers to use your discount codes, we can create them for you."
+        }
+    },
+    {
+        "pk": 15,
+        "model": "info.InfoLineItem",
+        "fields": {
+            "info": 3,
+            "description": "We can offer you a 'Store Starter' subscription pack. This will help you at the beginning of opening a new store, with all issues you will meet on your way."
+        }
+    },
+    {
+        "pk": 16,
+        "model": "info.InfoLineItem",
+        "fields": {
+            "info": 4,
+            "description": "Your logo is a visual representation of your business. We want to be sure that your logo is fully adapted to your company's profile. That's why we're here to listen and help your ideas come true."
+        }
+    },
+    {
+        "pk": 17,
+        "model": "info.InfoLineItem",
+        "fields": {
+            "info": 4,
+            "description": "Whether you need a color change, typography, or maybe a visual change for your existing website or branding change, we have it all for you."
+        }
+    },
+    {
+        "pk": 18,
+        "model": "info.InfoLineItem",
+        "fields": {
+            "info": 4,
+            "description": "Business cards, flyers, menus, the list goes on. If you need full company visualization. We are able to help you with this!"
+        }
+    },
+    {
+        "pk": 19,
+        "model": "info.InfoLineItem",
+        "fields": {
+            "info": 4,
+            "description": "We can help you find companies for small to large prints. We will prepare your materials for printing. With years of experience in designing prints, we provide everything you need."
+        }
+    }
+]

@@ -1,0 +1,43 @@
+/* ------------------------------ Contact Form */
+.contact-form {
+    border-radius: 2rem;
+    .form-group {
+        input,
+        textarea,
+        select {
+            margin: 1rem 0;
+            border-radius: 0.75rem;
+        }
+
+        i {
+            text-align: right;
+            position: absolute;
+            right: 30px;
+            margin-top: 7px;
+        }
+    }
+}
+/* ------------------------------ Form Buttons - Available */
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media (max-width: 992px) {
+    .buttons {
+        .btn {
+            width: calc(100% / 2.5 - 10px);
+        }
+    }
+}
+
+@media (max-width: 414px) {
+    .buttons {
+        flex-direction: column;
+        .btn {
+            width: 100%;
+            margin-bottom: 0.5rem;
+        }
+    }
+}

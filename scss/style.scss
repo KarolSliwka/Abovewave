@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;200;300;400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700&display=swap");
+@import "./base/base.scss";
+@import "./includes/alert-box.scss";
+@import "./components/header/nav.scss";
+@import "./components/footer/footer.scss";
+
+/* ---------- PAGES ---------- */
+@import "../home/static/home/scss/home.scss";
+@import "../info/static/info/scss/info.scss";
+@import "../offer/static/offer/scss/offer.scss";
+@import "../projects/static/projects/scss/projects.scss";
+@import "../contact/static/contact/scss/contact.scss";
+
+/* ---------- CARDS ---------- */
+@import "./components/cards/languages-cards.scss";
+
+/* ---------- TOASTS ---------- */
+@import "./includes/toasts.scss";

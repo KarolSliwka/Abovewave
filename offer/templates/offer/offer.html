@@ -1,0 +1,59 @@
+<!-- Main container -->
+<div class="container p-2">
+    <!-- Catgories container -->
+    {% for category in categories %}
+    <!-- If Category.count is none then do not display category block -->
+    {% if category.offer_set.all.count != 0 %}
+    <div class="offer-block bg-white p-4 mb-5 shadow-block">
+        <h2>{{ category.friendly_name }}</h2>
+        <hr class="offer-line">
+        <!-- Offers container -->
+        {% for offer in category.offer_set.all %}
+        {% if offer.image %}
+        <!-- With image -->
+        <div class="row d-flex align-items-center">
+            <!-- Offer Info container -->
+            <div class="col-2 col-sm-2 col-md-2 col-lg-1 col-xl-1">
+                <img src="{{ offer.image.url }}" alt="{{ offer.name }}">
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-8 col-xl-8">
+                <div class="col-12">
+                    <h3 class="title-small">{{ offer.name }}</h3>
+                    <p class="p-medium">{{ offer.description }}</p>
+                </div>
+            </div>
+            <!-- Offer buttons container -->
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3 col-xl-3">
+                <a href="{% url 'contact_offer' offer.id %}" class="btn btn-purple">Ask for price</a>
+            </div>
+        </div>
+        <!-- If last element is preseneted do not show line -->
+        {% if forloop.last %}
+        {% else %}
+        <hr>
+        {% endif %}
+        {% else %}
+        <div class="row mb-3 d-flex align-items-center">
+            <!-- Offer Info container -->
+            <div class="col-xs-12 col-sm-8´ col-md-8 col-lg-9 col-xl-9">
+                <div class="col-12">
+                    <h3 class="title-small">{{ offer.name }}</h3>
+                    <p class="p-medium">{{ offer.description }}</p>
+                </div>
+            </div>
+            <!-- Offer buttons container -->
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3 col-xl-3">
+                <a href="{% url 'contact_offer' offer.id %}" class="btn btn-purple">Ask for price</a>
+            </div>
+        </div>
+        <!-- If last element is preseneted do not show line -->
+        {% if forloop.last %}
+        {% else %}
+        <hr>
+        {% endif %}
+        {% endif %}
+        {% endfor %}
+    </div>
+    {% endif %}
+    {% endfor %}
+</div>

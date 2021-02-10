@@ -1,0 +1,103 @@
+.navbar {
+    padding-top: 0.65rem;
+    padding-bottom: 0.65rem;
+    .navbar-brand {
+        padding-top: 0;
+    }
+    .nav-item {
+        .nav-link {
+            color: $shark;
+            font-size: 0.85rem;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 600;
+            padding: 0.65rem 1rem 0.5rem 1rem;
+            opacity: 0.6;
+            text-align: center;
+            line-height: 30px;
+            /* Nav hover style was found on https://codepen.io/davidicus/pen/emgQKJ and converted
+            to mach whole website style. Many thanks for David Conner! */
+            &:hover {
+                opacity: 1;
+            }
+            &:before {
+                backface-visibility: hidden;
+                border: 1px solid rgba(#fff, 0);
+                bottom: 0px;
+                content: " ";
+                display: block;
+                margin: 0 auto;
+                position: relative;
+                transition: all 150ms ease-in-out;
+                width: 100%;
+            }
+            &:hover:before {
+                backface-visibility: hidden;
+                border-color: $blue;
+                transition: width 150ms ease-in-out;
+                width: 30%;
+            }
+            &:hover:before {
+                bottom: auto;
+                top: 0;
+                width: 30%;
+            }
+        }
+        /* Acive Links */
+        .active {
+            @extend .nav-link;
+            opacity: 1;
+            &:before {
+                backface-visibility: visible;
+                border-color: $blue;
+                width: 30%;
+            }
+        }
+    }
+    /* Free quote button */
+    .quote-button {
+        border-radius: 1.5rem;
+        opacity: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .nav-link {
+            border: 2px solid $blue;
+            border-radius: 1.5rem;
+            opacity: 1;
+            padding-top: 8px;
+            padding-bottom: 6px;
+            line-height: 21px;
+            transition: all 150ms ease-in-out;
+            &:hover {
+                border: 2px solid $blue;
+                border-radius: 1.5rem;
+                color: $white !important;
+                background-color: $blue;
+            }
+            &:before,
+            &:after {
+                content: none;
+            }
+        }
+        .active {
+            border-radius: 0;
+            border: none;
+            border-top: 2px solid $blue;
+            border-bottom: 2px solid $blue;
+            border-left: 2px solid #fff;
+            border-right: 2px solid #fff;
+            opacity: 1;
+            transition: all 150ms ease-in-out;
+        }
+    }
+    /* Hamburger Button */
+    .navbar-toggler {
+        border: none;
+    }
+    .navbar-toggler-icon {
+        ´ &:hover {
+            background-color: $white;
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='#212529' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+    }
+}

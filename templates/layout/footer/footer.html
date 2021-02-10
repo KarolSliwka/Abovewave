@@ -1,0 +1,18 @@
+<footer class="footer mt-auto py-3 footer-bg">
+    <div class="container d-flex justify-content-between">
+        <div class="p-small abovewave-time">© Abovewave Studio {{ currentYear }}</div>
+        <!-- Social media Icons made by https://www.freepik.com from https://www.flaticon.com/ -->
+        <div class="social-media">
+            <div class="col-3 d-flex">
+                <!--Social Media Icons -->
+                {% if social_media.count != 0 %} {% for social in social_media %}
+                <a href="{% if social.social_url %}{{ social.social_url }}{% else %}#{% endif %}" class="social-icon"
+                    target="_blank" rel="noopener noreferrer">
+                    {% if social.image %}
+                    <img src="{{ social.image.url }}" alt="{{ social.name }}" width='30' height='30'>
+                    {% endif %}
+                </a> {% endfor %} {% endif %}
+            </div>
+        </div>
+    </div>
+</footer>

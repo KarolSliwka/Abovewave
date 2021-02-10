@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extra_title %} -About Us{% endblock %}
+
+{% block content %}
+<!-- Main container -->
+<div class="top-margin">
+    <!-- Include jumbotron -->
+    {% include 'info/jumbotron.html' %}
+    <!-- Include white block-->
+    {% include 'includes/blocks/white-block.html' %}
+    <!-- Include info block-->
+    {% include 'info/information.html' %}
+</div>
+{% endblock %}

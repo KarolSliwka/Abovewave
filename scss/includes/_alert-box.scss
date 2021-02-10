@@ -1,0 +1,30 @@
+/* Right Click - F12 disabled Allert */
+.xd-dialog {
+    top: 20px;
+    .xd-content {
+        border-radius: 10px !important;
+        background-color: $shark;
+        box-shadow: none;
+        .xd-body {
+            p {
+                font-size: 0.85rem;
+                color: $white;
+                text-align: center;
+                padding: 0.5em;
+                margin: 0;
+            }
+            .xd-body-inner {
+                max-height: unset;
+            }
+        }
+        .xd-buttons {
+            display: none;
+        }
+        .xd-button.xd-ok {
+            display: none;
+        }
+    }
+}
+.xd-overlay {
+    background: rgba(255, 255, 255, 0.75) !important;
+}

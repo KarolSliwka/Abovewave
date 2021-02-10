@@ -1,0 +1,25 @@
+<!-- Main container FORM -->
+<div class="container p-2 mb-5">
+    <div class="contact-form bg-white p-4 shadow-block">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <!-- FORM container -->
+                <form method="POST">
+                    {% csrf_token %}
+                    <!-- Contact Form as Crispy -->
+                    {{ contact_form.name | as_crispy_field }}
+                    {{ contact_form.from_email | as_crispy_field }}
+                    {{contact_form.subject | as_crispy_field }}
+                    <!-- Dropdown Arrow -->
+                    {{ contact_form.offer | as_crispy_field }}
+                    {{ contact_form.message | as_crispy_field }}
+                    <!-- Form buttons -->
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 buttons">
+                        <button type="reset" class="btn btn-form btn-blue-p" onclick="setField()">Clear</button>
+                        <button type="submit" class="btn btn-form btn-purple">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>´

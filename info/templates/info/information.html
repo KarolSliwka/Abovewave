@@ -1,0 +1,57 @@
+<!-- Main container -->
+<div class="container p-2 mb-5">
+    {% if information.all.count != 0 %}
+    <!-- Info block -->
+    <div class="info-block bg-white p-4 shadow-block">
+        <!-- Info container -->
+        {% for info in information %}
+        <!-- If image exists in information -->
+        {% if info.image %}
+        <!-- With image -->
+        <div class="row pt-3 mb-4">
+            <div class="col-12">
+                <h2>{{ info.name }}</h2>
+                <hr class="info-line">
+            </div>
+            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 col-xl-3 mb-3">
+                <img src="{{ info.image.url }}" alt="{{ info.name }}">
+            </div>
+            <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9 col-xl-9">
+                {% for item in info.lineitems.all %}
+                <div class="row mb-3">
+                    <div class="point-icon">
+                        <i class="fas fa-hand-point-right"></i>
+                    </div>
+                    <div class="col-10">
+                        <p class="p-medium">{{ item.description }}</p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        {% else %}
+        <!-- Without image -->
+        <div class="row mb-4">
+            <div class="col-12">
+                <h2>{{ info.name }}</h2>
+                <hr class="info-line">
+                <!-- Display info line items -->
+                {% if info.lieitems.all.count != 0 %}
+                {% for item in info.lineitems.all %}
+                <div class="row mb-3">
+                    <div class="point-icon">
+                        <i class="fas fa-hand-point-right"></i>
+                    </div>
+                    <div class="col-10">
+                        <p class="p-medium">{{ item.description }}</p>
+                    </div>
+                </div>
+                {% endfor %}
+                {% endif %}
+            </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+    </div>
+    {% endif %}
+</div>

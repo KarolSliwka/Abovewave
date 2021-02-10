@@ -1,0 +1,37 @@
+#home {
+    p {
+        margin: 0;
+    }
+    .p-medium {
+        margin: 0 !important;
+        font-size: 1rem;
+    }
+
+    h2 {
+        display: flex;
+        align-items: center;
+    }
+
+    .fa-hand-point-right {
+        color: rgba($shark, 0.3);
+        font-size: 1rem;
+    }
+
+    .p-medium {
+        margin-bottom: 10px;
+    }
+}
+
+.info-block {
+    border-radius: 2rem;
+
+    .point-icon {
+        max-width: 40px;
+        padding-right: 0 !important;
+    }
+}
+
+.info-line {
+    @extend .offer-line;
+    margin-bottom: 1.5rem !important;
+}

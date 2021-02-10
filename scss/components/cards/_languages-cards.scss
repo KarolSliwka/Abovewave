@@ -1,0 +1,14 @@
+.card {
+    border: 1px solid $shark;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.35) !important;
+    img {
+        border-radius: 0.9rem;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+    .card-text {
+        color: $shark;
+        font-weight: 700;
+    }
+}

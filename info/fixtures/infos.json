@@ -1,0 +1,34 @@
+[
+    {
+        "pk": 1,
+        "model": "info.info",
+        "fields": {
+            "image": "",
+            "name": "What you can expect from our websites?"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "info.info",
+        "fields": {
+            "image": "",
+            "name": "Website Development"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "info.info",
+        "fields": {
+            "image": "",
+            "name": "E-commerce Websites"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "info.info",
+        "fields": {
+            "image": "",
+            "name": "Graphic Design"
+        }
+    }
+]

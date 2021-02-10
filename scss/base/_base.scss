@@ -1,0 +1,217 @@
+html {
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth !important;
+}
+
+body {
+    max-height: 100%;
+    max-width: 100%;
+    font-family: "Lato", sans-serif;
+}
+
+main {
+    .container {
+        padding: 60px 15px 0;
+    }
+}
+
+/* ------------------------------ Main Colours */
+
+$blue: #00eeff;
+$blue2: #00aebb;
+$blue-p: #68aeef;
+$purple: #7d51d9;
+$govenor: #3a2dc4;
+$shark: #212529;
+$white: #fff;
+$black: #000;
+$light-grey: #f7f7f7;
+$dark-grey: #d9d9d9;
+
+/* ------------------------------ Addition Marings */
+
+.top-margin {
+    margin-top: 35px;
+}
+
+/* ------------------------------ Text style */
+
+/* Headings */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Montserrat", sans-serif´;
+}
+
+hr {
+    opacity: 1;
+}
+
+/* Titles */
+
+.title-big {
+    font-size: 4rem;
+    font-weight: 900;
+}
+
+.title-medium {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.title-small {
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+/* Paragraphs */
+
+.p-small {
+    font-size: 0.85rem;
+    font-weight: 400;
+}
+
+.p-medium {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+.p-medium-b {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.p-big {
+    font-size: 1.5rem;
+    font-size: 300;
+}
+
+/* ------------------------------ Background Gradients */
+
+.no-bg {
+    background: none !important;
+}
+
+.gradient1 {
+    background: linear-gradient(180deg, rgba($blue, 1), rgba($blue2, 0.9)) fixed;
+}
+
+.gradient2 {
+    background: linear-gradient(90deg, rgba($blue, 0.8), rgba($purple, 0.1) 70.71%) fixed,
+        linear-gradient(120deg, rgba($blue, 0.8), rgba($blue, 0.2) 70.71%) fixed,
+        linear-gradient(90deg, rgba($blue, 0.8), rgba($purple, 0.9) 70.71%) fixed;
+}
+
+/* ------------------------------ Shadows */
+
+.shadow {
+    box-shadow: 0 0.25rem 0.85rem rgba(0, 0, 0, 0.09) !important;
+}
+
+.shadow-block {
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1) !important;
+}
+
+/* ------------------------------ Forms */
+
+.form-control:focus {
+    box-shadow: rgba(125, 81, 217, 0.3) 0px 0px 1px inset, rgba(58, 45, 196, 0.3) 0px 0px 5px;
+    outline: 0 none;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #999 !important;
+}
+
+/* ------------------------------ Buttons */
+.btn {
+    border-radius: 0;
+    width: calc(100% / 3 - 10px);
+    background-color: $white;
+    border-top: 2px solid $blue;
+    border-bottom: 2px solid $blue;
+    transition: all 150ms ease-in-out;
+    &:hover {
+        color: $white;
+        background-color: $blue;
+        border-radius: 2rem;
+        transition: all 350ms ease-in-out;
+    }
+}
+
+.btn-blue-p {
+    border-top: 2px solid rgba($blue-p, 0.6) !important;
+    border-bottom: 2px solid rgba($blue-p, 0.6) !important;
+    transition: all 200ms ease-in-out !important;
+    &:hover {
+        border: none !important;
+        background: linear-gradient(-45deg, $blue-p, 75%, $blue) !important;
+        transition: all 150ms ease-in-out !important;
+    }
+}
+
+.btn-purple {
+    border-top: 2px solid rgba($purple, 0.6) !important;
+    border-bottom: 2px solid rgba($purple, 0.6) !important;
+    transition: all 200ms ease-in-out !important;
+    &:hover {
+        border: none !important;
+        background: linear-gradient(-45deg, $purple, 75%, $govenor) !important;
+        transition: all 150ms ease-in-out !important;
+    }
+}
+
+/* ------------------------------ Rocket Up Button  */
+.go-to-the-top {
+    visibility: hidden;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 5.5rem 2rem;
+    background: linear-gradient(90deg, $govenor, $blue-p);
+    border: 3px solid $white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+    @extend .shadow-block;
+
+    &.show {
+        visibility: visible;
+        z-index: 9999999;
+    }
+
+    &:hover {
+        text-decoration: none;
+        -webkit-transform: rotate(315deg);
+        transform: rotate(315deg);
+    }
+    i {
+        color: $white;
+        transform: rotate(0deg);
+    }
+}
+
+@media (max-width: 992px) {
+    .go-to-the-top {
+        margin: 4.85rem 3rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .go-to-the-top {
+        height: 40px;
+        width: 40px;
+        margin: 4.85rem 0.65rem;
+    }
+}

@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extra_title %} - Web Design & Web Development{% endblock %}
+
+{% block content %}
+<!-- Main container -->
+<div class="top-margin">
+    <!-- Include jumbotron -->
+    {% include 'home/jumbotron.html' %}
+    <!-- Include white block-->
+    {% include 'includes/blocks/white-block.html' %}
+    <!-- Include author -->
+    {% include 'home/author.html' %}
+</div>
+{% endblock %}

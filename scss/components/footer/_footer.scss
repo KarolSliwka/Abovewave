@@ -1,0 +1,22 @@
+/* Footer  */
+
+.footer-bg {
+    border-top: 2px solid $blue;
+    background-color: $white;
+    .abovewave-time {
+        color: $shark;
+        display: flex;
+        align-items: center;
+        opacity: 0.8;
+    }
+    .social-media {
+        .social-icon {
+            padding-left: 5px;
+            padding-right: 5px;
+            opacity: 0.6;
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+}

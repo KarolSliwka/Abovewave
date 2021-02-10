@@ -1,0 +1,11 @@
+[
+    {
+        "pk": 1,
+        "model": "home.authorblock",
+        "fields": {
+            "name": "Karol Sliwka",
+            "image": "images/author/Karol_Sliwka.png",
+            "about": "I am the owner of the Abovewave. I'm a multi-talented human with over 2+ years of experience. You can call me a Full-Stack Developer, Fron-End Developer, Experience Designer, UI/UX Designer, or by any other market defined function-title. I'm also a multi-disciplinary maker with experience in a wide range of design disciplines. I am a music enthusiast, photographer, and more."
+        }
+    }
+]

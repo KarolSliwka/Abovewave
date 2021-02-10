@@ -1,0 +1,12 @@
+[
+    {
+        "pk": 1,
+        "model": "home.offer",
+        "fields": {
+            "category": "",
+            "name": "",
+            "description": "",
+            "price": ""
+        }
+    }
+]

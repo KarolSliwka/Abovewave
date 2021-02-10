@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extra_title %} - Contact Us{% endblock %}
+
+{% block content %}
+<!-- Main container -->
+<div class="top-margin mb-4">
+    <!-- Include jumbotron -->
+    {% include 'contact/jumbotron.html' %}
+    <!-- Include white block-->
+    {% include 'includes/blocks/white-block.html'%}
+    <!-- Include author -->
+    {% include 'contact/contact-form.html' %}
+</div>
+{% endblock %}
