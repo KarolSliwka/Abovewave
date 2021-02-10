@@ -12,6 +12,7 @@ The whole application coloristic was selected based on the project name and my p
 ```bash
 $blue: #00eeff;
 $blue2: #00aebb;
+$blue-p: #68aeef;
 $purple: #7d51d9;
 $govenor: #3a2dc4;
 $shark: #212529;
