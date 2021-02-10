@@ -12,11 +12,13 @@
 
         /* ------------------------------ Project images */
         .single-image {
+            border-radius: 1rem;
+            background: linear-gradient(90deg, $blue, $purple) !important;
             img {
-                border: 4px solid $white;
-                border-radius: 1rem;
                 object-fit: cover;
                 object-position: top;
+                border-radius: 1rem;
+                padding: 3px;
             }
             .image-main {
                 height: 100%;
@@ -29,6 +31,7 @@
                 position: absolute;
                 bottom: -5%;
                 right: -1%;
+                background-color: $white;
             }
 
             .image-bottom {
@@ -37,6 +40,7 @@
                 position: absolute;
                 bottom: -10%;
                 left: 35%;
+                background-color: $white;
             }
         }
     }

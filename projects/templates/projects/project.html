@@ -5,14 +5,15 @@
         {% for project in projects %}
         <div class="row justify-content-between">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 images">
-                <div class="single-image">
-                    <img src="{{ project.image_main.url }}" alt="{{ project.name }}" class="image-main shadow">
+                <div class="single-image shadow-block">
+                    <img src="{{ project.image_main.url }}" alt="{{ project.name }}" class="image-main">
                 </div>
                 <div class="single-image">
-                    <img src="{{ project.image_side.url }}" alt="{{ project.name }}" class="image-side shadow">
+                    <img src="{{ project.image_side.url }}" alt="{{ project.name }}" class="image-side shadow-block">
                 </div>
                 <div class="single-image">
-                    <img src="{{ project.image_bottom.url }}" alt="{{ project.name }}" class="image-bottom shadow">
+                    <img src="{{ project.image_bottom.url }}" alt="{{ project.name }}"
+                        class="image-bottom shadow-block">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 project-details">
