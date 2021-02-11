@@ -48,14 +48,6 @@
     /* ------------------------------ Project detials */
     .project-details {
         position: relative;
-        a {
-            text-decoration: none;
-            color: $govenor;
-            &:hover {
-                text-decoration: none;
-                color: $purple;
-            }
-        }
 
         .title-medium {
             font-size: 1.75rem;
@@ -67,12 +59,15 @@
             font-size: 1rem;
             font-weight: 500;
         }
+    }
 
-        .live-web {
-            font-size: 1rem;
-            font-weight: 400;
-            text-align: right;
-            margin-top: 2rem;
+    a {
+        position: relative;
+        text-decoration: none;
+        color: $shark;
+        &:hover {
+            text-decoration: none;
+            color: $shark;
         }
     }
 }
