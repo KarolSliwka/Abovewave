@@ -10,7 +10,6 @@ class AdminProject(admin.ModelAdmin):
         'image_main',
         'image_side',
         'image_bottom',
-        'description',
     )
 
     ordering = ('name',)
